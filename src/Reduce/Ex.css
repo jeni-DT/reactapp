@@ -1,0 +1,31 @@
+.container{
+ 
+    width: 300px;
+    height: 200px;
+    margin: 100px;
+    text-align: center;
+    background-color:white;
+    border-radius: 10px;
+    padding: 20px;
+    justify-content: center;
+    display: block;
+  }
+  .btn1{
+    text-align: center;
+    background-color: rgb(236, 69, 8);
+    width: 5vw;
+    height: 5vh;
+  }
+  .btn2{
+    text-align: center;
+    background-color: rgb(205, 27, 152);
+    width: 5vw;
+    height: 5vh;
+  }
+  .btn3{
+    text-align: center;
+    background-color: rgb(238, 214, 31);
+    width: 5vw;
+    height: 5vh;
+    
+  }

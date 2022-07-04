@@ -1,0 +1,33 @@
+/* .child{
+    height: 330px;
+    background: coral;
+    margin: 5px solid black;
+    border-radius: 2px;
+    width: 50%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.parent{
+    height: 500px;
+    background:rgb(168, 70, 70);
+    margin: 15px solid black;
+    border-radius: 5px;
+    width: 50%;
+    border-color: blue;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    text-align: center;
+} */
+.child{
+    background-color: blue;
+    height: 200px;
+    
+}
+.parent{
+    background-color: black;
+    height: 300px;
+}

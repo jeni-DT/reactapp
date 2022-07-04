@@ -1,0 +1,11 @@
+.border{
+    border: 25%;
+    border-radius: 1rem;
+    border-width: 80vw;
+    border-color: black;
+    height: 60vh;
+    border-style: dashed;
+    justify-content: center;
+    text-align: center;
+
+}
