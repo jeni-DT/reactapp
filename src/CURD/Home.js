@@ -1,8 +1,9 @@
 
 
 import React from 'react'
-import { Container, Navbar, Nav, Row, Col, Card, Image } from 'react-bootstrap'
+import { Container, Navbar, Nav, Row, Col, Card, Image ,Button} from 'react-bootstrap'
 import CardHeader from 'react-bootstrap/esm/CardHeader';
+import Fetch from '../Crud/Fetch';
 import {data} from './Data'
 import {Table}from './Table'
 
@@ -37,6 +38,7 @@ function Home() {
                                                         <Card.Text>
                                                             {Info.Price}
                                                         </Card.Text>
+                                                        <Button variant="primary">Action</Button>
             
                                                     </Card.Body>
                                                 </Card>
@@ -59,6 +61,7 @@ function Home() {
                     <div className='col-lg-6'>
                   {/* <tablePass={IDsTATE} */}
                   {/* <Table/> */}
+                  <Fetch/>
 
                     </div>
                 </div>

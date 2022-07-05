@@ -1,14 +1,14 @@
 
 import './App.css';
 
-import {Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 
-// import First from './class';
-// import Practice from './example1.js';
-// import Favorite from './example2.js';
-// import Create from './change.js';
-// import Firstone from './destroy.js';
+import First from './class';
+import Practice from './example1.js';
+import Favorite from './example2.js';
+import Create from './change.js';
+import Firstone from './destroy.js';
 
 
 // import Student from './track.js';
@@ -16,7 +16,7 @@ import {Routes, Route, BrowserRouter } from "react-router-dom";
 // import Effect1 from './effect1.js';
 // import Fun from './effect2.js';
 
-               ////local Storage
+////local Storage
 import Login from './boot/Login';
 import Register from './boot/Single_state';
 import Home from './boot/Home';
@@ -38,61 +38,86 @@ import DataFetch from './Reduce/Demo';
 import Add from './CURD/Home';
 import Form1 from './Crud/Form1';
 import Fetch from './Crud/Fetch';
+import Layout from './Layout';
+
 
 
 function App() {
-  return(
-   <>
-   {/* <First/>
-   <Practice/>
-   <Favorite />
-   <Create />
-   <Firstone/>
+  return (
+    <>
+      {/* 
+   
+  
+   
+   
    
    <Student/>
    <Effect/>
    <Effect1/>
    <Fun/> */}
-   {/* <Login/>
+      {/* <Login/>
    <Register/> */}
-  
-   {/* <Routes>
-          <Route path="/" element={<Register />} />
+     
+
+        <Routes>
+          <Route path='/'element={<Layout/>}></Route>
+          <Route path="/first" element={<First/>} />
+          <Route path="/example1" element={<Practice/>} />
+          <Route path="/example2" element={ <Favorite />} />
+          <Route path="/change" element={<Create />} />
+          <Route path="/register" element={<Firstone/>} />
+
+          <Route path="/register" element={<Register />} />
           <Route path="login" element={<Login />} />
           <Route path="Home" element={<Home />} />
-          </Routes> */}
-          
-          <Routes>
-            <Route path='/Form' element={<Form1/>}/>
-            <Route path='/fetch' element={<Fetch/>}/>
-          </Routes>
-          
-          
-
-           {/* <NewFun/> */}
-
-           {/* <Parent/>
-           <Trial/>
-           <Dynamic/> */}
-          
-            {/* 28.06  */}
-           {/* <Reduce/> */}
-
+          <Route path='/Form' element={<Form1 />} />
+          <Route path='/fetch' element={<Fetch />} />
+          <Route path='par' element={<Parent/>}/>
+          <Route path='trial' element={<Trial/>}/>
+          <Route path='media' element={<Dynamic/>}/>
+          {/* 28.06  */}
+          <Route path='reduce' element={ <Reduce/>}/>
            {/* 30.06 */}
-           {/* <Main/> */}
-           {/* fetching */}
-           {/* <Datafetch1/> */}
-           {/* <DataFetch/> */}
+          <Route path='main' element={<Main/>}/>
+          <Route path='dfetch' element={<Datafetch1/>}/>
+          <Route path='fe' element={<DataFetch/>}/>
+          <Route path='add' element={<Add/>}/>
+          
+        
+
+       
+          
+        </Routes>
+        
+      
+     
 
 
-           {/* <Index/> */}
-           {/* <Context/> */}
-           {/* <Add/> */}
+
+        
+
+     
+          
            
-           <Form1/>
-           
-           
-   </>
+
+      
+     
+
+     
+      
+     
+      
+      
+
+{/* 
+      <Index/> */}
+      {/* <Context/> */}
+      
+
+      {/* <Form1 /> */}
+
+
+    </>
   );
 }
 
