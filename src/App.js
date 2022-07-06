@@ -11,10 +11,10 @@ import Create from './change.js';
 import Firstone from './destroy.js';
 
 
-// import Student from './track.js';
-// import Effect from './effect.js';
-// import Effect1 from './effect1.js';
-// import Fun from './effect2.js';
+import Student from './track.js';
+import Effect from './effect.js';
+import Effect1 from './effect1.js';
+import Fun from './effect2.js';
 
 ////local Storage
 import Login from './boot/Login';
@@ -39,6 +39,7 @@ import Add from './CURD/Home';
 import Form1 from './Crud/Form1';
 import Fetch from './Crud/Fetch';
 import Layout from './Layout';
+import Update from './Crud/Update';
 
 
 
@@ -51,7 +52,7 @@ function App() {
    
    
    
-   <Student/>
+  
    <Effect/>
    <Effect1/>
    <Fun/> */}
@@ -66,12 +67,17 @@ function App() {
           <Route path="/example2" element={ <Favorite />} />
           <Route path="/change" element={<Create />} />
           <Route path="/register" element={<Firstone/>} />
+          <Route path="/track" element={<Student/>} />
+          <Route path="/register" element={<Firstone/>} />
+          <Route path="/register" element={<Firstone/>} />
+          <Route path="/register" element={<Firstone/>} />
 
           <Route path="/register" element={<Register />} />
           <Route path="login" element={<Login />} />
           <Route path="Home" element={<Home />} />
           <Route path='/Form' element={<Form1 />} />
           <Route path='/fetch' element={<Fetch />} />
+          <Route path='/update/:id'element={<Update/>}></Route>
           <Route path='par' element={<Parent/>}/>
           <Route path='trial' element={<Trial/>}/>
           <Route path='media' element={<Dynamic/>}/>

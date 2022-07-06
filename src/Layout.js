@@ -6,6 +6,18 @@ function Layout() {
     <div>
         <nav>
             <ul>
+            <li>
+                    <Link to="first">Classcomponent</Link>
+                </li>
+                <li>
+                    <Link to="example1">State</Link>
+                </li>
+                <li>
+                    <Link to="example2">Didmound</Link>
+                </li>
+                <li>
+                    <Link to="change">DidUpdate</Link>
+                </li>
                 <li>
                     <Link to="/register">Register</Link>
                 </li><li>
@@ -17,9 +29,8 @@ function Layout() {
                 <li>
                     <Link to="/Form">crud</Link>
                 </li>
-                <li>
-                    <Link to="/fetch">fetch</Link>
-                </li>
+                
+                
                 <li>
                     <Link to="new">Twoway</Link>
                 </li>
@@ -47,21 +58,7 @@ function Layout() {
                 <li>
                     <Link to="add">crudimg</Link>
                 </li>
-                <li>
-                    <Link to="first">Classcomponent</Link>
-                </li>
-                <li>
-                    <Link to="example1">State</Link>
-                </li>
-                <li>
-                    <Link to="example2">Didmound</Link>
-                </li>
-                <li>
-                    <Link to="change">DidUpdate</Link>
-                </li>
-                <li>
-                    <Link to="change">DidUpdate</Link>
-                </li>
+                
 
             </ul>
         </nav>

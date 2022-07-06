@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
+
 function Form1() {
   const [InValue, setInValue] = useState({
     regno: "",
@@ -107,22 +108,15 @@ function Form1() {
       setError(errorsValid);
     }
   };
-//   useEffect(() => {
-//     axios.get("http://localhost:8000/List").then((response) => {
-//       if (response.data.length > 0) {
-//         let updatedId = response.data;
-//       } else {
-//       }
-//     });
+  
 
-//     console.log(InValue.id);
-//   }, []);
   return (
     <div>
       <div className="col-lg-12">
         <div className="col-lg-12">
-          <h1>Student Details</h1>
+         
           <Container className="col-3">
+          <h1>Student Details</h1>
             <Form onSubmit={(e) => handleSub(e)}>
               <div>
                 <Form.Label>Reg.no:</Form.Label>
