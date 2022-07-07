@@ -109,6 +109,8 @@ input[type="password"]:focus{
 }
 .button{
   text-align: center;
+  height: auto;
+  width: auto;
 }
 .bg{
   background-color: rgb(5, 5, 220);
@@ -130,7 +132,7 @@ input[type="password"]:focus{
   width: 600px;
 }
 .example {
-  padding: 20px;
+  padding: 150px;
   color: white;
 }
 @media only screen and (max-width: 600px) {

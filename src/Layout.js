@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Layout() {
   return (
-    <div>
+    <div className='example'>
         <nav>
             <ul>
             <li>
@@ -19,15 +19,16 @@ function Layout() {
                     <Link to="change">DidUpdate</Link>
                 </li>
                 <li>
-                    <Link to="/register">Register</Link>
-                </li><li>
-                    <Link to="login">Login</Link>
+                    <Link to="/destroy">Remove</Link>
                 </li>
                 <li>
-                    <Link to="Home">Home</Link>
+                    <Link to="/register">Register</Link>
                 </li>
                 <li>
                     <Link to="/Form">crud</Link>
+                </li>
+                <li>
+                    <Link to="media">Media</Link>
                 </li>
                 
                 
@@ -40,9 +41,7 @@ function Layout() {
                 <li>
                     <Link to="trial">Usekey</Link>
                 </li>
-                <li>
-                    <Link to="media">Media</Link>
-                </li>
+                
                 <li>
                     <Link to="reduce">ReduceSample</Link>
                 </li>
@@ -58,6 +57,13 @@ function Layout() {
                 <li>
                     <Link to="add">crudimg</Link>
                 </li>
+                <li>
+                    <Link to="hoc">HOC</Link>
+                </li>
+                <li>
+                    <Link to="provider">context with reducer</Link>
+                </li>
+
                 
 
             </ul>

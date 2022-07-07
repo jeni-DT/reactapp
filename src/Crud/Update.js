@@ -17,15 +17,6 @@ function Update() {
     total: "",
   });
 
-  // const [value, setValue] = useState({})
-  // const change = (e) => {
-  //     e.preventDefault();
-  //     setValue({ ...value, [e.target.name]: e.target.value });
-
-  // }
-
-  // console.log(value);
-
   const handleText = (e) => {
     const { name, value } = e.target;
 
