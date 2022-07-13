@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import First from "./class";
 import Practice from "./example1.js";
@@ -37,25 +37,17 @@ import Layout from "./Layout";
 import Update from "./Crud/Update";
 import Hochome from "./HOC/HocHome";
 import Provider2 from "./ContextwithReduce/provider2";
+import TeamList from "./ContextCrud/TeamList";
+import { AddTeam } from "./ContextCrud/AddTeam";
+import UpdateTeam  from "./ContextCrud/Update";
+
+
 
 function App() {
   return (
     <>
-      {/* 
-   
-  
-   
-   
-   
-  
-   <Effect/>
-   <Effect1/>
-   <Fun/> */}
-      {/* <Login/>
-   <Register/> */}
-
       <Routes>
-        <Route path="/" element={<Layout />}></Route>
+        <Route path="/" element={<Layout />} />
         <Route path="/first" element={<First />} />
         <Route path="/example1" element={<Practice />} />
         <Route path="/example2" element={<Favorite />} />
@@ -63,7 +55,7 @@ function App() {
         <Route path="/destroy" element={<Firstone />} />
         <Route path="/track" element={<Student />} />
 
-        <Route path="/register" element={<Register />} />
+        {/* <Route path="/register" element={<Register />} />
         <Route path="login" element={<Login />} />
         <Route path="Home" element={<Home />} />
         <Route path="/Form" element={<Form1 />} />
@@ -71,24 +63,24 @@ function App() {
         <Route path="/update/:id" element={<Update />}></Route>
         <Route path="par" element={<Parent />} />
         <Route path="trial" element={<Trial />} />
-        <Route path="media" element={<Dynamic />} />
+        <Route path="media" element={<Dynamic />} /> */}
         {/* 28.06  */}
-        <Route path="reduce" element={<Reduce />} />
+        {/* <Route path="reduce" element={<Reduce />} /> */}
         {/* 30.06 */}
-        <Route path="main" element={<Main />} />
+        {/* <Route path="main" element={<Main />} />
         <Route path="dfetch" element={<Datafetch1 />} />
         <Route path="fe" element={<DataFetch />} />
-        <Route path="add" element={<Add />} />
+        <Route path="add" element={<Add />} /> */}
         {/* HOC */}
-        <Route path="hoc" element={<Hochome />}></Route>
-        <Route path="provider" element={<Provider2 />} />
+        {/* <Route path="hoc" element={<Hochome />}></Route>
+        <Route path="provider" element={<Provider2 />} /> */}
+
+        <Route path="/read" element={<TeamList />} />
+        
+
+        <Route path="/Addteam" element={<AddTeam />} />
+        <Route path="/update/:id" element={<UpdateTeam/>}/>
       </Routes>
-
-      {/* 
-      <Index/> */}
-      {/* <Context/> */}
-
-      {/* <Form1 /> */}
     </>
   );
 }

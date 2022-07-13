@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
-
 function Form1() {
   const [InValue, setInValue] = useState({
     regno: "",
@@ -19,15 +18,6 @@ function Form1() {
     num: "",
     total: "",
   });
-
-  // const [value, setValue] = useState({})
-  // const change = (e) => {
-  //     e.preventDefault();
-  //     setValue({ ...value, [e.target.name]: e.target.value });
-
-  // }
-
-  // console.log(value);
 
   const handleText = (e) => {
     const { name, value } = e.target;
@@ -95,28 +85,26 @@ function Form1() {
     let errorsValid = Validate();
     if (Object.keys(errorsValid).length === 0) {
       axios
-      .post("http://localhost:8000/List", InValue)
-      .then((response) => {
-        console.log("success");
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-        nav("/fetch");
+        .post("http://localhost:8000/List", InValue)
+        .then((response) => {
+          console.log("success");
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+      nav("/fetch");
     } else {
       console.log("errorvalid", errorsValid);
       setError(errorsValid);
     }
   };
-  
 
   return (
     <div>
       <div className="col-lg-12">
         <div className="col-lg-12">
-         
           <Container className="col-3">
-          <h1>Student Details</h1>
+            <h1>Student Details</h1>
             <Form onSubmit={(e) => handleSub(e)}>
               <div>
                 <Form.Label>Reg.no:</Form.Label>

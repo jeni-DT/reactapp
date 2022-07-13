@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Layout() {
   return (
-    <div className='example'>
+    <div >
         <nav>
             <ul>
             <li>
@@ -63,6 +63,18 @@ function Layout() {
                 <li>
                     <Link to="provider">context with reducer</Link>
                 </li>
+                {/* <li>
+                    <Link to="global">Context Api</Link>
+                </li>
+                <li>
+                    <Link to="conmain"> Context</Link>
+                </li> */}
+                <li>
+                    <Link to="/Addteam">Add</Link>
+                </li>
+                {/* <li>
+                    <Link to ="/read"></Link>
+                </li> */}
 
                 
 

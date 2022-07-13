@@ -1,11 +1,7 @@
 body {
-  
-  
-  
- 
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -13,59 +9,55 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-#first{
+#first {
   text-align: center;
 }
-#render{
+#render {
   text-align: center;
 }
-#huf{
+#huf {
   text-align: center;
 }
-#hd{
+#hd {
   text-align: center;
 }
-#update{
+#update {
   text-align: center;
 }
-h2{
+h2 {
   color: rgb(222, 10, 10);
 }
-h1{
+h1 {
   text-align: center;
   color: rgb(18, 41, 133);
 }
-.global-container{
-  
+.global-container {
   color: #0e87dd;
   display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 99vh;
-  
+  justify-content: center;
+  align-items: center;
+  height: 99vh;
 }
-form{
+form {
   font-size: 14px;
   margin-top: 10px;
-  
 }
-.login-form{
+.login-form {
   width: 380px;
   /* height: 450px;
   margin: 280px; */
   background-color: #1a2226;
   border-radius: 10px;
-  padding:30px;
-  
+  padding: 30px;
 }
 input[type="text"],
 input[type="email"],
 input[type="number"],
-input[type="password"]{
-  background-color:  #f5f6f6;
+input[type="password"] {
+  background-color: #f5f6f6;
   border: 1px solid #090502;
   border-radius: 10px;
   margin-bottom: 5px;
@@ -74,60 +66,54 @@ input[type="password"]{
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
-input[type="password"]:focus{
-    outline: none;
-    border: none;
-    background-color:rgb(23, 198, 225);
-    margin: 0;
+input[type="password"]:focus {
+  outline: none;
+  border: none;
+  background-color: rgb(23, 198, 225);
+  margin: 0;
 }
-.title{
+.title {
   font-weight: 500;
-    padding-top: 10px;
-    color: rgb(3, 179, 199);
-    text-align: center;
+  padding-top: 10px;
+  color: rgb(3, 179, 199);
+  text-align: center;
 }
-.reg-form{
+.reg-form {
   width: 420px;
   /* height: 90vh; */
   /* margin: 280px; */
   background-color: #1ca0e2;
   border-radius: 10px;
-  padding:30px;
-  
-  
-  
+  padding: 30px;
 }
-.global-container1{
+.global-container1 {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 99vh;
+  justify-content: center;
+  align-items: center;
+  height: 99vh;
 
-  
   color: #06090b;
-  
 }
-.button{
+.button {
   text-align: center;
   height: auto;
   width: auto;
 }
-.bg{
+.bg {
   background-color: rgb(5, 5, 220);
 }
-.login{
+.login {
   width: 380px;
   height: 450px;
   margin: 280px;
   background-color: #f1f5f7;
   border-radius: 10px;
-  padding:20px;
-  
+  padding: 20px;
 }
-.new{
+.new {
   text-align: center;
 }
-#show{
+#show {
   height: 400px;
   width: 600px;
 }
@@ -136,22 +122,52 @@ input[type="password"]:focus{
   color: white;
 }
 @media only screen and (max-width: 600px) {
-  .example {background: red;}
+  .example {
+    background: red;
+  }
 }
 
 @media only screen and (min-width: 600px) {
-  .example {background: green;}
+  .example {
+    background: green;
+  }
 }
-
 
 @media only screen and (min-width: 768px) {
-  .example {background: blue;}
-} 
+  .example {
+    background: blue;
+  }
+}
 
 @media only screen and (min-width: 992px) {
-  .example {background: orange;}
-} 
+  .example {
+    background: orange;
+  }
+}
 
 @media only screen and (min-width: 1200px) {
-  .example {background: pink;}
+  .example {
+    background: pink;
+  }
 }
+.cont{
+  text-align: center;
+  height: 600px;
+}
+.Addbg {
+  
+  text-align: center;
+  background-color:rgb(107, 103, 103);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 250px;
+  margin-left: 600px;
+  margin-right: 600px;
+  border: 5px solid rgb(28, 58, 2);
+  border-radius: 5px;
+  
+  
+}
+

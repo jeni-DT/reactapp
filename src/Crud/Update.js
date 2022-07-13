@@ -5,7 +5,7 @@ import { useParams, useNavigate } from "react-router-dom";
 
 function Update() {
   const nav = useNavigate();
-  let { id } = useParams();
+  let { id } = useParams(); // Get the Id param from the URL.
   const [fetch, setFetch] = useState(false);
   const [InValue, setInValue] = useState({});
 
