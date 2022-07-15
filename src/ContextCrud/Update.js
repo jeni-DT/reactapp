@@ -1,5 +1,5 @@
 import React, { useContext, useState ,useEffect} from "react";
-import { Container } from "react-bootstrap";
+
 import { useNavigate, useParams ,Link} from "react-router-dom";
 import { GlobalContext } from "./GlobalState";
 
@@ -46,6 +46,7 @@ import { GlobalContext } from "./GlobalState";
                 type="text"
                 placeholder="Enter name"
                value={newuser.Name}
+               required
               />
             </div>
 
@@ -54,7 +55,7 @@ import { GlobalContext } from "./GlobalState";
               <input
                 value={newuser.mail}
                 onChange={(e) => handleChange("mail",e.target.value)}
-                type="text"
+                type="email"
                 placeholder="Enter designation"
               />
             </div>

@@ -42,8 +42,8 @@ h1 {
   height: 99vh;
 }
 form {
-  font-size: 14px;
-  margin-top: 10px;
+  font-size: 18px;
+  margin-top: 12px;
 }
 .login-form {
   width: 380px;
@@ -58,10 +58,10 @@ input[type="email"],
 input[type="number"],
 input[type="password"] {
   background-color: #f5f6f6;
-  border: 1px solid #090502;
-  border-radius: 10px;
-  margin-bottom: 5px;
-  padding: 5px;
+  border: 2px solid #090502;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -93,6 +93,11 @@ input[type="password"]:focus {
   height: 99vh;
 
   color: #06090b;
+}
+.formContainer{
+  display: flex;
+  height: 100vh;
+  background-color: #0e87dd;
 }
 .button {
   text-align: center;

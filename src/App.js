@@ -30,7 +30,7 @@ import Main, { Context } from "./Context/Main";
 import Datafetch1 from "./Fetching/Datafetch1";
 import DataFetch from "./Reduce/Demo";
 
-import Add from "./CURD/Home";
+// import Add from "./CURD/Home";
 import Form1 from "./Crud/Form1";
 import Fetch from "./Crud/Fetch";
 import Layout from "./Layout";
@@ -39,9 +39,12 @@ import Hochome from "./HOC/HocHome";
 import Provider2 from "./ContextwithReduce/provider2";
 import TeamList from "./ContextCrud/TeamList";
 import { AddTeam } from "./ContextCrud/AddTeam";
-import UpdateTeam  from "./ContextCrud/Update";
-
-
+import UpdateTeam from "./ContextCrud/Update";
+// import AddPage from "./Redux/Ui.js/Add";
+// import ReduxHome from "./ReduxCrud/ReduxHome";
+// import AddProduct from "./ReduxCrud/Form/AddProduct";
+import ReduxHome from "./ReduxCrud/ReduxHome";
+import AddProduct from "./ReduxCrud/Form/AddProduct";
 
 function App() {
   return (
@@ -55,7 +58,7 @@ function App() {
         <Route path="/destroy" element={<Firstone />} />
         <Route path="/track" element={<Student />} />
 
-        {/* <Route path="/register" element={<Register />} />
+        <Route path="/register" element={<Register />} />
         <Route path="login" element={<Login />} />
         <Route path="Home" element={<Home />} />
         <Route path="/Form" element={<Form1 />} />
@@ -63,23 +66,25 @@ function App() {
         <Route path="/update/:id" element={<Update />}></Route>
         <Route path="par" element={<Parent />} />
         <Route path="trial" element={<Trial />} />
-        <Route path="media" element={<Dynamic />} /> */}
+        <Route path="media" element={<Dynamic />} />
         {/* 28.06  */}
-        {/* <Route path="reduce" element={<Reduce />} /> */}
+        <Route path="reduce" element={<Reduce />} />
         {/* 30.06 */}
-        {/* <Route path="main" element={<Main />} />
+        <Route path="main" element={<Main />} />
         <Route path="dfetch" element={<Datafetch1 />} />
         <Route path="fe" element={<DataFetch />} />
-        <Route path="add" element={<Add />} /> */}
+        {/* <Route path="add" element={<Add />} /> */}
         {/* HOC */}
-        {/* <Route path="hoc" element={<Hochome />}></Route>
-        <Route path="provider" element={<Provider2 />} /> */}
+        <Route path="hoc" element={<Hochome />}></Route>
+        <Route path="provider" element={<Provider2 />} />
 
         <Route path="/read" element={<TeamList />} />
-        
 
         <Route path="/Addteam" element={<AddTeam />} />
-        <Route path="/update/:id" element={<UpdateTeam/>}/>
+        <Route path="/update/:id" element={<UpdateTeam />} />
+        {/* <Route path="/Add" element={<AddPage />} /> */}
+        <Route path="Redux" element={<ReduxHome/>} />
+        <Route path="/Additem" element={<AddProduct/>} />
       </Routes>
     </>
   );

@@ -75,7 +75,19 @@ function Layout() {
                 {/* <li>
                     <Link to ="/read"></Link>
                 </li> */}
+                <li>
+                    <Link to="/Add">Ui
+                    </Link>
+                </li>
 
+                <li>
+                    <Link to="Redux">Redux
+                    </Link>
+                </li>
+                <li>
+                    <Link to="Additem">Redux
+                    </Link>
+                </li>
                 
 
             </ul>

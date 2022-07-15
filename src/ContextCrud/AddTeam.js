@@ -29,12 +29,13 @@ export const AddTeam = () => {
           <h1>Team Members</h1>
           <form onSubmit={handleSubmit}>
             <div className="w-full mb-5">
-              <label><b>Name</b></label>
+              <label ><b>Name</b></label>
               <input
                 value={Name}
                 onChange={(e) => setName(e.target.value)}
                 type="text"
                 placeholder="Enter name"
+                required
               />
             </div>
 
