@@ -1,12 +1,12 @@
 
-/* body {
-    background: url("https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=1600");
+body {
+    background: url("https://images.pexels.com/photos/3183172/pexels-photo-3183172.jpeg?auto=compress&cs=tinysrgb&w=1600");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
    
-  } */
+  }
   .tablebg{
     background-color: transparent;
     background-attachment: fixed;
@@ -15,7 +15,7 @@
     background-repeat: no-repeat;
     text-align: center;
     margin-top: 200px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
       
   }

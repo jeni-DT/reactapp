@@ -13,13 +13,17 @@ import "../node_modules/bootstrap/dist/css/bootstrap.css";
 
 import { BrowserRouter } from "react-router-dom";
 import { GlobalProvider } from "./ContextCrud/GlobalState";
+import store from "./ReduxCrud/Store/Store";
+import { Provider } from "react-redux";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <GlobalProvider>
+ 
+  <GlobalProvider> 
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </GlobalProvider>
+  </GlobalProvider> 
+  
 );
 
 // If you want to start measuring performance in your app, pass a function

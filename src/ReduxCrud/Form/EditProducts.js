@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Button,
   Container,
@@ -8,25 +8,12 @@ import {
   Row,
   Col,
 } from "react-bootstrap";
-import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import { postProduct } from "../Action/Actions";
+import { Link, useNavigate } from "react-router-dom";
 
-const AddProduct = () => {
+const EditProduct = () => {
     const navigate=useNavigate();
-    let dispatch=useDispatch();
-    const[change,setChange]=useState('');
-    console.log("change", change)
-
-    const handleChange = (e) => {
-      setChange({
-          ...change,
-          [e.target.name]: e.target.value,
-      })
-  }
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(postProduct(change, navigate))
     navigate ('Redux')
     
   };
@@ -37,7 +24,7 @@ const AddProduct = () => {
           <Image src=""></Image>
         </Navbar.Brand>
         <h1>
-          <marquee>Add product</marquee>
+          <marquee>Edit product</marquee>
         </h1>
       </Navbar>
       <Container>
@@ -45,25 +32,27 @@ const AddProduct = () => {
           <Col md={6}>
             <div>
                 <h1>Add Product</h1>
-              <Form >
+              <Form onSubmit={(e)=>handleSubmit(e)}>
                 <div>
                   <Form.Label><b><i>Image</i></b></Form.Label>
-                  <Form.Control type="text" value={change.url} onChange={handleChange}  required></Form.Control>
+                  <Form.Control type="text" required></Form.Control>
                 </div>
                 <div>
                   <Form.Label><b><i>Title</i></b></Form.Label>
-                  <Form.Control type="text" required value={change.Title} onChange={handleChange} ></Form.Control>
+                  <Form.Control type="text" required></Form.Control>
                 </div>
                 <div>
                   <Form.Label><b><i>Price</i></b></Form.Label>
-                  <Form.Control type="number" required value={change.Price} onChange={handleChange} ></Form.Control>
+                  <Form.Control type="number" required></Form.Control>
                 </div>
                 <br></br>
                 <div>
-                <Button variant="primary" size="lg" onClick={handleSubmit}>
-          ADD
+                <Button variant="primary" size="lg">
+          Update
         </Button>{' '}
                 </div>
+                <Link to='/'
+                className='btn btn-dark'>Cancel</Link>
               </Form>
             </div>
           </Col>
@@ -76,4 +65,4 @@ const AddProduct = () => {
   );
 };
 
-export default AddProduct;
+export default EditProduct;

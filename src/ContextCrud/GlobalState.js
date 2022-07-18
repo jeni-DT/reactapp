@@ -8,6 +8,16 @@ const initialState = {
       Name: "Jasmine",
       mail: "jas@gmail.com",
     },
+    {
+      id: 2,
+      Name: "Haiyash",
+      mail: "haiyash@gmail.com",
+    },
+    {
+      id: 3,
+      Name: "Rosy",
+      mail: "rosy@gmail.com",
+    }
   ],
 };
 

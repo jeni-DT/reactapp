@@ -49,6 +49,7 @@ import AddProduct from "./ReduxCrud/Form/AddProduct";
 function App() {
   return (
     <>
+    <div >
       <Routes>
         <Route path="/" element={<Layout />} />
         <Route path="/first" element={<First />} />
@@ -81,11 +82,13 @@ function App() {
         <Route path="/read" element={<TeamList />} />
 
         <Route path="/Addteam" element={<AddTeam />} />
-        <Route path="/update/:id" element={<UpdateTeam />} />
+        <Route path="/UpdateTeam/:id" element={<UpdateTeam />} />
         {/* <Route path="/Add" element={<AddPage />} /> */}
         <Route path="Redux" element={<ReduxHome/>} />
         <Route path="/Additem" element={<AddProduct/>} />
+        {/* <Route exact path="/Additem" component={()=><AddProduct/>}/> */}
       </Routes>
+      </div>
     </>
   );
 }

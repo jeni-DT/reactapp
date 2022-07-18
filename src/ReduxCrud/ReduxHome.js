@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import {
   Container,
   Navbar,
@@ -10,12 +10,35 @@ import {
   Button,
 } from "react-bootstrap";
 import CardHeader from "react-bootstrap/esm/CardHeader";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import Fetch from "../Crud/Fetch";
-import { data } from "./Data";
+// import Fetch from "../Crud/Fetch";
+import { fetchProduct,deleteproducts } from "./Action/Actions";
+// import { data } from "./Data";
+
 
 const ReduxHome = () => {
   const navigate = useNavigate();
+
+  const [del, setDel] = useState("false");
+  let products = useSelector((state) => state.allproducts.products);
+  console.log(products, "datas");
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchProduct());
+  }, [dispatch]);
+  console.log("products", products);
+  useEffect(() => {
+    dispatch(fetchProduct());
+  }, [del, dispatch]);
+  // const handleChange = () => {
+
+  //   navigate("/Additem")
+  // }
+  const handleDelete = (product) => {
+    dispatch(deleteproducts(product))
+    setDel(true)
+  }
 
   const handleSub = (e) => {
     e.preventDefault();
@@ -37,7 +60,7 @@ const ReduxHome = () => {
         <div className="row">
           <div className="col-lg-6">
             <div className="col-12">
-              <CardHeader>List Of Items</CardHeader>
+              {/* <CardHeader>List Of Items</CardHeader>
               <Row>
                 {data.map((Info) => {
                   return (
@@ -55,7 +78,40 @@ const ReduxHome = () => {
                     </Col>
                   );
                 })}
+              </Row> */}
+               {products && products.length > 0 && products.map((product) => {
+            return (
+              <Row>
+                <Col>
+
+
+
+
+                  <Card
+                    style={{ width: "18rem" }}>
+                    <Card.Img
+                      src={product.url}>
+                    </Card.Img>
+                    <Card.Body >
+                      <div> {product.id}</div>
+                      <div> {product.Title}</div>
+                      <div> {product.Price}</div>
+
+                    </Card.Body>
+
+                    {/* <Button className="btn-warning" style={{ width: "10rem" }} onClick=
+                      {() => handleEdit(product.id)}>Edit</Button> */}
+                    <Button className="btn-danger" style={{ width: "10rem" }} onClick=
+                      {() => handleDelete(product.id)}>Delete</Button>
+
+                    {/* <td><Button className="btn-primary" onClick={()=>handleEdit(demy.id)}>Edit</Button></td></tr> */}
+
+                  </Card>
+
+                </Col>
               </Row>
+            )
+          })}
             </div>
           </div>
           <div className="col-lg-6">

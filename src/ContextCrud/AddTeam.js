@@ -1,8 +1,7 @@
 import React, { useContext, useState } from "react";
-import { Container } from "react-bootstrap";
-import { useNavigate,Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { GlobalContext } from "./GlobalState";
-import "./Crud.css"
+import "./Crud.css";
 
 export const AddTeam = () => {
   const { addTeams, teams } = useContext(GlobalContext);
@@ -24,12 +23,14 @@ export const AddTeam = () => {
 
   return (
     <div>
-      <div className="Addbg">
-        
+      <body className="addTeam">
+        <div className="Addbg">
           <h1>Team Members</h1>
           <form onSubmit={handleSubmit}>
             <div className="w-full mb-5">
-              <label ><b>Name</b></label>
+              <label>
+                <b>Name</b>
+              </label>
               <input
                 value={Name}
                 onChange={(e) => setName(e.target.value)}
@@ -40,7 +41,9 @@ export const AddTeam = () => {
             </div>
 
             <div>
-              <label><b>Email</b></label>
+              <label>
+                <b>Email</b>
+              </label>
               <input
                 value={mail}
                 onChange={(e) => setMail(e.target.value)}
@@ -50,14 +53,16 @@ export const AddTeam = () => {
             </div>
             <br></br>
             <div className="flex items-center justify-between">
-              <button type="submit" class="btn btn-primary">submit</button>
+              <button type="submit" class="btn btn-primary">
+                submit
+              </button>
             </div>
             <div className="text-center mt-4 text-gray-500">
-          <Link to="/read">Cancel</Link>
-        </div>
+              <Link to="/read">Cancel</Link>
+            </div>
           </form>
         </div>
-      </div>
-    
+      </body>
+    </div>
   );
 };
